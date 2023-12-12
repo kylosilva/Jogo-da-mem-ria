@@ -1,0 +1,498 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F5A70F3B-990F-4274-A9FC-1DBF5A612096}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Jogo_da_memória</RootNamespace>
+    <AssemblyName>Jogo da memória</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCreditos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCreditos.Designer.cs">
+      <DependentUpon>FormCreditos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDificil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDificil.Designer.cs">
+      <DependentUpon>FormDificil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGanhou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGanhou.Designer.cs">
+      <DependentUpon>FormGanhou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormImpossivel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormImpossivel.Designer.cs">
+      <DependentUpon>FormImpossivel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMedio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMedio.Designer.cs">
+      <DependentUpon>FormMedio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNiveis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNiveis.Designer.cs">
+      <DependentUpon>FormNiveis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNivelFacil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNivelFacil.Designer.cs">
+      <DependentUpon>FormNivelFacil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRegistrarNovoUtilizador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrarNovoUtilizador.Designer.cs">
+      <DependentUpon>FormRegistrarNovoUtilizador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCreditos.resx">
+      <DependentUpon>FormCreditos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDificil.resx">
+      <DependentUpon>FormDificil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGanhou.resx">
+      <DependentUpon>FormGanhou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormImpossivel.resx">
+      <DependentUpon>FormImpossivel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMedio.resx">
+      <DependentUpon>FormMedio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNiveis.resx">
+      <DependentUpon>FormNiveis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNivelFacil.resx">
+      <DependentUpon>FormNivelFacil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrarNovoUtilizador.resx">
+      <DependentUpon>FormRegistrarNovoUtilizador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Carro de Imagem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\extra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mudo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cute-cartoon-brain-brain-illustration-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cego.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parte de tras da carta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefenicoesJogos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Som.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\On_Off-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\On_Off-removebg-preview %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thejazzpiano.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaperflare.com_wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medio10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medio9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medio8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medio7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medio6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medio5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medio4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medio3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medio2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medio1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cars4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car1jpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aa12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jett_artwork.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jett_artwork-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\V_AGENTS_587x900_Omen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\omen-valorant.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dificil9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dificil10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dificil11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dificil12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dificil15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dificil14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dificil13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dificil1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dificil2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dificil3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dificil4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dificil5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dificil6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dificil7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dificil8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaperflare.com_wallpaper %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trasDificil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaperflare.com_wallpaper1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\valorant-viper-valorant-breach-valorant-killjoy-valorant-cypher-valorant-hd-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaperflare.com_wallpaper %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trasCarros.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v18.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\v17.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
